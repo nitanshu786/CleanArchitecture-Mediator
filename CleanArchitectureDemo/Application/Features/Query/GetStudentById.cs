@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace Application.Features.Query
 {
-   public class GetStudentById : IRequest<Student>
+    public class GetStudentById : IRequest<Student>
     {
         public GetStudentById(int ID)
         {

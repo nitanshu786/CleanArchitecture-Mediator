@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace Application.Features.Command
 {
-   public class CreateStudentCommand : IRequest<Student>
+    public class CreateStudentCommand : IRequest<Student>
     {
         public CreateStudentCommand(Student student)
         {
@@ -41,12 +41,13 @@ namespace Application.Features.Command
                 Name = request.Name,
                 Address = request.Address,
                 Email = request.Email,
-                Contact=request.Contact
+                Contact = request.Contact
             };
-            return await _context.CreateStudent(student);
+            var newone=  _context.CreateStudent(student);
+            return newone;
         }
 
-       
+
     }
 
 }

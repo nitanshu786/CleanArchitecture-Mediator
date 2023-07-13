@@ -1,0 +1,74 @@
+<!-- <form [formGroup]="registrationForm" (ngSubmit)="onSubmit()">
+   
+  </form>
+   -->
+
+   <section class="bg-secondary">
+  
+    <div class="mask d-flex align-items-center h-100 gradient-custom-3 p-5 m-5 bg-light">
+      <div class="container h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+            <div class="card" style="border-radius: 15px;">
+              <div class="card-body p-5">
+                <h2 class="text-uppercase text-center mb-5">Create an account</h2>
+  
+               
+  
+                <form  [formGroup]="registrationForm" >
+                      <mat-form-field appearance="outline">
+                       <mat-label>Username</mat-label>
+                      <input matInput formControlName="username" type="text" [(ngModel)]="register.username" placeholder="Enter your Name" />
+                      <mat-error *ngIf="registrationForm.controls['username'].invalid && (registrationForm.controls['username'].dirty || registrationForm.controls['username'].touched)">
+                          Please enter a valid Username.
+                        </mat-error>
+                       </mat-form-field>
+                       <mat-form-field appearance="outline">
+                          <mat-label>Email</mat-label>
+                          <input matInput formControlName="email" type="text" [(ngModel)]="register.email" placeholder="Enter your Email" />
+                          <mat-error *ngIf="registrationForm.controls['email'].invalid && (registrationForm.controls['email'].dirty || registrationForm.controls['email'].touched)">
+                              Please enter a valid email.
+                            </mat-error>
+                          </mat-form-field>
+                        <mat-form-field appearance="outline">
+                          <mat-label>Password</mat-label>
+                          <input matInput formControlName="passwords" type="password" [(ngModel)]="register.confirm" placeholder="Enter your password" />
+                          <mat-error *ngIf="registrationForm.get('passwords')?.invalid  ">
+                              Password must be required.
+                            </mat-error>   
+                          
+                        </mat-form-field>
+  
+                        <mat-form-field appearance="outline">
+                          <mat-label>comfirm Password</mat-label>
+                          <input matInput formControlName="confirmPassword" type="password"[(ngModel)]="register.pasword" placeholder="Confirm password"   />
+                        
+                         
+                        </mat-form-field>
+                        <div *ngIf="registrationForm.get('passwords')?.value !== registrationForm.get('confirmPassword')?.value && registrationForm.get('confirmPassword')?.touched">
+                          <mat-error>
+                           Password do not match   </mat-error>
+                          </div>
+                       
+  
+  
+                  <button mat-raised-button color="primary" [disabled]="registrationForm.invalid || registrationForm.get('passwords')?.value !== registrationForm.get('confirmPassword')?.value" (click)="Register()" >
+                      Register
+                    </button>
+  
+                  <p class="text-center text-muted mt-5 mb-0">Have already an account? <a routerLink="/login"
+                      class="fw-bold text-body"><u>Login here</u></a></p>
+  
+                </form>
+  
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+
+
+  

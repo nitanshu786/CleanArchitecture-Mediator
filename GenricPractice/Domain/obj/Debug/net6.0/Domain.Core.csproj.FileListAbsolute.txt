@@ -1,0 +1,12 @@
+D:\AllCOmpanyWork\GenricPractice\Domain\bin\Debug\net6.0\Domain.Core.deps.json
+D:\AllCOmpanyWork\GenricPractice\Domain\bin\Debug\net6.0\Domain.Core.dll
+D:\AllCOmpanyWork\GenricPractice\Domain\bin\Debug\net6.0\Domain.Core.pdb
+D:\AllCOmpanyWork\GenricPractice\Domain\obj\Debug\net6.0\Domain.Core.csproj.AssemblyReference.cache
+D:\AllCOmpanyWork\GenricPractice\Domain\obj\Debug\net6.0\Domain.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\AllCOmpanyWork\GenricPractice\Domain\obj\Debug\net6.0\Domain.Core.AssemblyInfoInputs.cache
+D:\AllCOmpanyWork\GenricPractice\Domain\obj\Debug\net6.0\Domain.Core.AssemblyInfo.cs
+D:\AllCOmpanyWork\GenricPractice\Domain\obj\Debug\net6.0\Domain.Core.csproj.CoreCompileInputs.cache
+D:\AllCOmpanyWork\GenricPractice\Domain\obj\Debug\net6.0\Domain.Core.dll
+D:\AllCOmpanyWork\GenricPractice\Domain\obj\Debug\net6.0\refint\Domain.Core.dll
+D:\AllCOmpanyWork\GenricPractice\Domain\obj\Debug\net6.0\Domain.Core.pdb
+D:\AllCOmpanyWork\GenricPractice\Domain\obj\Debug\net6.0\ref\Domain.Core.dll

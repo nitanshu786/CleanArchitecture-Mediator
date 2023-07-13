@@ -1,7 +1,9 @@
-﻿using Domain.Entity;
+﻿using Application.Interface.IRepository;
+using Domain.Entity;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
+using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,17 +14,19 @@ namespace Application.Interface.Repository
     {
         private readonly IApplicatinDbContext _context;
 
+
         public StudentRepo(IApplicatinDbContext context)
         {
             _context = context;
+
         }
 
-        public async Task<Student> CreateStudent(Student student)
+        public Student CreateStudent(Student student)
         {
             if (student != null)
             {
-                var create = _context.Students.Add(student);
-                await _context.SaveChangesAsync();
+                var create =  _context.Students.Add(student);
+                 _context.SaveChanges();
                 return create.Entity;
             }
             return null;
@@ -67,6 +71,23 @@ namespace Application.Interface.Repository
                 return update.Entity;
             }
             return null;
+        }
+
+        public bool ExtractEmailFromToken(string jwtToken)
+        {
+
+            var tokenHandler = new JwtSecurityTokenHandler();
+            var token = tokenHandler.ReadJwtToken(jwtToken);
+            var emailClaim = token.Claims.FirstOrDefault(c => c.Type == "email");
+            var email = emailClaim?.Value;
+            if (email != null)
+            {
+                var finds = _context.LoginUsers.FirstOrDefault(x => x.SessionId == email);
+                if (finds != null)
+                    return true;
+                return false;
+            }
+            return false;
         }
     }
 }

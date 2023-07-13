@@ -7,12 +7,13 @@ using System.Threading.Tasks;
 
 namespace Application.Interface.Repository
 {
-   public interface IStudentRepo
+    public interface IStudentRepo
     {
         Task<List<Student>> GetAllStudent();
         Task<Student> GetByID(int Id);
-        Task<Student> CreateStudent(Student student);
+        Student CreateStudent(Student student);
         Task<Student> UpdateSutudent(Student student);
         Task<int> DeleteStudent(int Id);
+        bool ExtractEmailFromToken(string jwtToken);
     }
 }

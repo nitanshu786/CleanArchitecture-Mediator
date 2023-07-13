@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace Application.Features.Command
 {
-   public class UpdateStudentCommand : IRequest<Student>
+    public class UpdateStudentCommand : IRequest<Student>
     {
         public UpdateStudentCommand(Student student)
         {
@@ -47,7 +47,7 @@ namespace Application.Features.Command
                 Name = request.Name,
                 Address = request.Address,
                 Email = request.Email,
-                Contact=request.Contact
+                Contact = request.Contact
             };
             return await _context.UpdateSutudent(student);
         }

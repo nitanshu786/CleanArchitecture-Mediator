@@ -1,0 +1,11 @@
+<div class="row">
+  <div class="col">
+    <p class="text-primary" >Login Execution Time: {{ getExecutionTime('https://localhost:7247/api/RegisterApi/Login/POST') }} ms </p>
+    <p class="text-primary">Token  Execution Time: {{ executionTimes}} ms</p>
+    <p class="text-primary" >GET Student Execution Time: {{ getExecutionTime('https://localhost:7247/api/StudentAPI/GET') }} ms</p>
+    <p class="text-primary" >POST Student Execution Time: {{ getExecutionTime('https://localhost:7247/api/StudentAPI/POST') }} ms</p>
+    <p class="text-primary" >Register Execution Time: {{ getExecutionTime('https://localhost:7247/api/RegisterApi/POST') }} ms</p>
+  </div>
+  </div>
+    
+  

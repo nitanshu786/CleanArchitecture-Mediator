@@ -1,0 +1,10 @@
+<p>home works!</p>
+
+<div class="row">
+    <div class="col-12 form-group ml-5">
+    <button class="btn btn-success mb-3" (click)="generateNumber()">Generate Number</button>
+    <ul>
+      <li *ngFor="let n of numbers | sorted">{{ n }}</li>
+    </ul>
+</div>
+  </div>

@@ -1,75 +1,103 @@
 ﻿using Application.Features.Command;
 using Application.Features.Query;
+using Application.Interface.Repository;
 using Domain.Entity;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Primitives;
 using System;
 using System.Collections.Generic;
+using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
+using System.Net.Http.Headers;
+using System.Security.Claims;
 using System.Threading.Tasks;
 
 namespace WebApplication.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class StudentAPI : ControllerBase
     {
         private readonly IMediator _mediator;
 
+       
+      
+
         public StudentAPI(IMediator mediator)
         {
             _mediator = mediator;
+           
         }
 
         [HttpGet]
-        public async Task<List<Student>> GetAllStudentList()
+        public async Task<IActionResult> GetAllStudentList()
         {
-            var list = await _mediator.Send(new GetAllStudentQuery());
-            return list;
+            StringValues authorizationHeaders;
+            Request.Headers.TryGetValue("Authorization", out authorizationHeaders);
+            string tokenValue = authorizationHeaders.FirstOrDefault()?.Split(" ").LastOrDefault();
+            bool find = await _mediator.Send(new OneTimeLoginCommand() { Token = tokenValue });
+            if (find)
+            {
+                var list = await _mediator.Send(new GetAllStudentQuery());
+                return Ok(list);
+            }
+            return NotFound();
         }
 
         [HttpGet("{id}")]
-        public async Task<Student> GetStudentById(int id)
+        public async Task<IActionResult> GetStudentById(int id)
         {
             if (id != 0)
             {
                 var ID = await _mediator.Send(new GetStudentById(id));
-                return ID;
+                if (id == 0)
+                    return NotFound();
+                return Ok(ID);
             }
-            return null;
+            return BadRequest();
         }
 
         [HttpPost]
-        public async Task<Student> CreateStudent(Student student)
+        public async Task<IActionResult> CreateStudent(Student student)
         {
             if (student != null)
             {
                 var create = await _mediator.Send(new CreateStudentCommand(student));
-                return create;
+                if (create == null)
+                    return NotFound();
+                return Ok(create);
             }
-            return null;
+            return BadRequest();
         }
 
         [HttpPut]
-        public async Task<Student> UpdateStudent(Student student)
+        public async Task<IActionResult> UpdateStudent(Student student)
         {
             if (student != null)
             {
                 var update = await _mediator.Send(new UpdateStudentCommand(student));
-                return update;
+                if (update == null)
+                    return NotFound();
+                return Ok(update);
             }
-            return null;
+            return BadRequest();
         }
 
         [HttpDelete("{id}")]
-        public async Task<int> StudentDelete(int id)
+        public async Task<IActionResult> StudentDelete(int id)
         {
             if (id != 0)
             {
-                return await _mediator.Send(new DeleteStudentCommand() { Id = id });
+              var dell=  await _mediator.Send(new DeleteStudentCommand() { Id = id });
+                if (dell == 0)
+                    return NotFound();
+                return Ok(dell);
             }
-            return 0;
+            return BadRequest();
         }
     }
 }

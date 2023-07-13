@@ -18,11 +18,6 @@ C:\Users\hp\source\repos\CleanArchitectureDemo\Infrastruture\obj\Debug\net5.0\In
 C:\Users\hp\source\repos\CleanArchitectureDemo\Infrastruture\obj\Debug\net5.0\ref\Infrastruture.dll
 C:\Users\hp\source\repos\CleanArchitectureDemo\Infrastruture\obj\Debug\net5.0\Infrastruture.pdb
 C:\Users\hp\source\repos\CleanArchitectureDemo\Infrastruture\obj\Debug\net5.0\Infrastruture.genruntimeconfig.cache
-D:\AllCOmpanyWork\CleanArchitectureDemo\Infrastruture\obj\Debug\net5.0\Infrastruture.csprojAssemblyReference.cache
-D:\AllCOmpanyWork\CleanArchitectureDemo\Infrastruture\obj\Debug\net5.0\Infrastruture.GeneratedMSBuildEditorConfig.editorconfig
-D:\AllCOmpanyWork\CleanArchitectureDemo\Infrastruture\obj\Debug\net5.0\Infrastruture.AssemblyInfoInputs.cache
-D:\AllCOmpanyWork\CleanArchitectureDemo\Infrastruture\obj\Debug\net5.0\Infrastruture.AssemblyInfo.cs
-D:\AllCOmpanyWork\CleanArchitectureDemo\Infrastruture\obj\Debug\net5.0\Infrastruture.csproj.CoreCompileInputs.cache
 D:\AllCOmpanyWork\CleanArchitectureDemo\Infrastruture\bin\Debug\net5.0\Infrastruture.deps.json
 D:\AllCOmpanyWork\CleanArchitectureDemo\Infrastruture\bin\Debug\net5.0\Infrastruture.runtimeconfig.json
 D:\AllCOmpanyWork\CleanArchitectureDemo\Infrastruture\bin\Debug\net5.0\Infrastruture.runtimeconfig.dev.json
@@ -33,6 +28,11 @@ D:\AllCOmpanyWork\CleanArchitectureDemo\Infrastruture\bin\Debug\net5.0\Applicati
 D:\AllCOmpanyWork\CleanArchitectureDemo\Infrastruture\bin\Debug\net5.0\Domain.dll
 D:\AllCOmpanyWork\CleanArchitectureDemo\Infrastruture\bin\Debug\net5.0\Application.pdb
 D:\AllCOmpanyWork\CleanArchitectureDemo\Infrastruture\bin\Debug\net5.0\Domain.pdb
+D:\AllCOmpanyWork\CleanArchitectureDemo\Infrastruture\obj\Debug\net5.0\Infrastruture.csprojAssemblyReference.cache
+D:\AllCOmpanyWork\CleanArchitectureDemo\Infrastruture\obj\Debug\net5.0\Infrastruture.GeneratedMSBuildEditorConfig.editorconfig
+D:\AllCOmpanyWork\CleanArchitectureDemo\Infrastruture\obj\Debug\net5.0\Infrastruture.AssemblyInfoInputs.cache
+D:\AllCOmpanyWork\CleanArchitectureDemo\Infrastruture\obj\Debug\net5.0\Infrastruture.AssemblyInfo.cs
+D:\AllCOmpanyWork\CleanArchitectureDemo\Infrastruture\obj\Debug\net5.0\Infrastruture.csproj.CoreCompileInputs.cache
 D:\AllCOmpanyWork\CleanArchitectureDemo\Infrastruture\obj\Debug\net5.0\Infrastruture.csproj.CopyComplete
 D:\AllCOmpanyWork\CleanArchitectureDemo\Infrastruture\obj\Debug\net5.0\Infrastruture.dll
 D:\AllCOmpanyWork\CleanArchitectureDemo\Infrastruture\obj\Debug\net5.0\ref\Infrastruture.dll

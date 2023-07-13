@@ -1,0 +1,17 @@
+D:\AllCOmpanyWork\GenricPractice\Application\bin\Debug\net6.0\Application.deps.json
+D:\AllCOmpanyWork\GenricPractice\Application\bin\Debug\net6.0\Application.runtimeconfig.json
+D:\AllCOmpanyWork\GenricPractice\Application\bin\Debug\net6.0\Application.dll
+D:\AllCOmpanyWork\GenricPractice\Application\bin\Debug\net6.0\Application.pdb
+D:\AllCOmpanyWork\GenricPractice\Application\bin\Debug\net6.0\Domain.Core.dll
+D:\AllCOmpanyWork\GenricPractice\Application\bin\Debug\net6.0\Domain.Core.pdb
+D:\AllCOmpanyWork\GenricPractice\Application\obj\Debug\net6.0\Application.csproj.AssemblyReference.cache
+D:\AllCOmpanyWork\GenricPractice\Application\obj\Debug\net6.0\Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\AllCOmpanyWork\GenricPractice\Application\obj\Debug\net6.0\Application.AssemblyInfoInputs.cache
+D:\AllCOmpanyWork\GenricPractice\Application\obj\Debug\net6.0\Application.AssemblyInfo.cs
+D:\AllCOmpanyWork\GenricPractice\Application\obj\Debug\net6.0\Application.csproj.CoreCompileInputs.cache
+D:\AllCOmpanyWork\GenricPractice\Application\obj\Debug\net6.0\Application.csproj.CopyComplete
+D:\AllCOmpanyWork\GenricPractice\Application\obj\Debug\net6.0\Application.dll
+D:\AllCOmpanyWork\GenricPractice\Application\obj\Debug\net6.0\refint\Application.dll
+D:\AllCOmpanyWork\GenricPractice\Application\obj\Debug\net6.0\Application.pdb
+D:\AllCOmpanyWork\GenricPractice\Application\obj\Debug\net6.0\Application.genruntimeconfig.cache
+D:\AllCOmpanyWork\GenricPractice\Application\obj\Debug\net6.0\ref\Application.dll

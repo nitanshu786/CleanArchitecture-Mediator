@@ -1,0 +1,17 @@
+D:\AllCOmpanyWork\GenricPractice\InfraStructure.Data\bin\Debug\net6.0\InfraStructure.Data.deps.json
+D:\AllCOmpanyWork\GenricPractice\InfraStructure.Data\bin\Debug\net6.0\InfraStructure.Data.dll
+D:\AllCOmpanyWork\GenricPractice\InfraStructure.Data\bin\Debug\net6.0\InfraStructure.Data.pdb
+D:\AllCOmpanyWork\GenricPractice\InfraStructure.Data\bin\Debug\net6.0\Application.dll
+D:\AllCOmpanyWork\GenricPractice\InfraStructure.Data\bin\Debug\net6.0\Domain.Core.dll
+D:\AllCOmpanyWork\GenricPractice\InfraStructure.Data\bin\Debug\net6.0\Application.pdb
+D:\AllCOmpanyWork\GenricPractice\InfraStructure.Data\bin\Debug\net6.0\Domain.Core.pdb
+D:\AllCOmpanyWork\GenricPractice\InfraStructure.Data\obj\Debug\net6.0\InfraStructure.Data.csproj.AssemblyReference.cache
+D:\AllCOmpanyWork\GenricPractice\InfraStructure.Data\obj\Debug\net6.0\InfraStructure.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\AllCOmpanyWork\GenricPractice\InfraStructure.Data\obj\Debug\net6.0\InfraStructure.Data.AssemblyInfoInputs.cache
+D:\AllCOmpanyWork\GenricPractice\InfraStructure.Data\obj\Debug\net6.0\InfraStructure.Data.AssemblyInfo.cs
+D:\AllCOmpanyWork\GenricPractice\InfraStructure.Data\obj\Debug\net6.0\InfraStructure.Data.csproj.CoreCompileInputs.cache
+D:\AllCOmpanyWork\GenricPractice\InfraStructure.Data\obj\Debug\net6.0\InfraStructure.Data.csproj.CopyComplete
+D:\AllCOmpanyWork\GenricPractice\InfraStructure.Data\obj\Debug\net6.0\InfraStructure.Data.dll
+D:\AllCOmpanyWork\GenricPractice\InfraStructure.Data\obj\Debug\net6.0\refint\InfraStructure.Data.dll
+D:\AllCOmpanyWork\GenricPractice\InfraStructure.Data\obj\Debug\net6.0\InfraStructure.Data.pdb
+D:\AllCOmpanyWork\GenricPractice\InfraStructure.Data\obj\Debug\net6.0\ref\InfraStructure.Data.dll

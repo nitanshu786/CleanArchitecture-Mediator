@@ -1,0 +1,185 @@
+
+<h2 class="text-primary text-center">Question List</h2>
+<button class="btn btn-primary p-2 m-2" data-toggle="modal" data-target="#newmodal" > 
+    <li class="fa fa-plus"></li> Add/Question</button>
+<div class="p-2 m-2">
+<table class="table table-bordered table-stripe">
+<thead>
+    <tr>
+        <th>Question</th>
+        <th>option1</th>
+        <th>option2</th>
+        <th>option3</th>
+        <th>option4</th>
+        <th>CorrectAnswer</th>
+
+    </tr>
+</thead>
+<tbody>
+  <tr *ngFor="let que of GetAll">
+    <td>{{que.question}}</td>
+    <td>{{que.option1}}</td>
+    <td>{{que.option2}}</td>
+    <td>{{que.option3}}</td>
+    <td>{{que.option4}}</td>
+    <td>{{que.correctAnswer}}</td>
+
+
+    <td>
+      <button (click)="EditClick(que)" class="btn btn-info m-2 " data-toggle="modal" data-target="#Edit">
+        <li class="fa fa-edit"></li>
+      </button>
+      <button class="btn btn-danger m-2" (click)="DeleteClick(que.id)">
+        <li class="fa fa-trash"></li>
+      </button>
+    </td>
+    
+
+  </tr>
+</tbody>
+</table>
+</div>
+
+<!-- new -->
+<div class="modal" tabindex="-1" role="dialog" id="newmodal">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">New Question</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span>&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+  
+        <div class=" form-group row">
+       <div class="col-12">
+        <mat-form-field class="example-full-width">
+            <mat-label>Question</mat-label>
+            <textarea matInput placeholder="Write your question"  [(ngModel)]="newquestion.question" type="text"></textarea>
+          </mat-form-field>
+       </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-12">
+                <mat-form-field class="example-full-width">
+                    <mat-label>Option1</mat-label>
+                    <input matInput placeholder="Enter your option1"  [(ngModel)]="newquestion.option1" type="text">
+                  </mat-form-field>
+               </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-12">
+                <mat-form-field class="example-full-width">
+                    <mat-label>Option2</mat-label>
+                    <input matInput placeholder="Enter your option2"  [(ngModel)]="newquestion.option2" type="text">
+                  </mat-form-field>
+               </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-12">
+                <mat-form-field class="example-full-width">
+                    <mat-label>Option3</mat-label>
+                    <input matInput placeholder="Enter your option3"  [(ngModel)]="newquestion.option3" type="text">
+                  </mat-form-field>
+               </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-12">
+                    <mat-form-field class="example-full-width">
+                        <mat-label>Option4</mat-label>
+                        <input matInput placeholder="Enter your option4"  [(ngModel)]="newquestion.option4" type="text">
+                      </mat-form-field>
+                   </div>
+                </div>
+                 <div class="form-group row">
+                    <div class="col-12">
+                        <mat-form-field class="example-full-width">
+                            <mat-label>CorrectAnswer</mat-label>
+                            <input matInput placeholder="Enter your Answer"  [(ngModel)]="newquestion.correctAnswer" type="text">
+                          </mat-form-field>
+                       </div>
+                    </div>
+
+        
+  
+                
+        </div>
+        <div class="modal-footer">
+          <button  type="button"  (click)="CreateClick()" data-dismiss="modal" class="btn btn-primary">Save </button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" tabindex="-1" role="dialog" id="Edit">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Update Quetion</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span>&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <div class=" form-group row">
+                <div class="col-12">
+                 <mat-form-field class="example-full-width">
+                     <mat-label>Question</mat-label>
+                     <textarea matInput placeholder="Write your question"  [(ngModel)]="editquestion.question" type="text"></textarea>
+                   </mat-form-field>
+                </div>
+                 </div>
+                 <div class="form-group row">
+                     <div class="col-12">
+                         <mat-form-field class="example-full-width">
+                             <mat-label>Option1</mat-label>
+                             <input matInput placeholder="Enter your option1"  [(ngModel)]="editquestion.option1" type="text">
+                           </mat-form-field>
+                        </div>
+                 </div>
+                 <div class="form-group row">
+                     <div class="col-12">
+                         <mat-form-field class="example-full-width">
+                             <mat-label>Option2</mat-label>
+                             <input matInput placeholder="Enter your option2"  [(ngModel)]="editquestion.option2" type="text">
+                           </mat-form-field>
+                        </div>
+                 </div>
+                 <div class="form-group row">
+                     <div class="col-12">
+                         <mat-form-field class="example-full-width">
+                             <mat-label>Option3</mat-label>
+                             <input matInput placeholder="Enter your option3"  [(ngModel)]="editquestion.option3" type="text">
+                           </mat-form-field>
+                        </div>
+                     </div>
+                     <div class="form-group row">
+                         <div class="col-12">
+                             <mat-form-field class="example-full-width">
+                                 <mat-label>Option4</mat-label>
+                                 <input matInput placeholder="Enter your option4"  [(ngModel)]="editquestion.option4" type="text">
+                               </mat-form-field>
+                            </div>
+                         </div>
+                          <div class="form-group row">
+                             <div class="col-12">
+                                 <mat-form-field class="example-full-width">
+                                     <mat-label>CorrectAnswer</mat-label>
+                                     <input matInput placeholder="Enter your Answer"  [(ngModel)]="editquestion.correctAnswer" type="text">
+                                   </mat-form-field>
+                                </div>
+                             </div>
+         
+  
+        
+        </div>
+        <div class="modal-footer">
+          <button type="button" (click)="Updateclick()" data-dismiss="modal" class="btn btn-primary">update </button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  

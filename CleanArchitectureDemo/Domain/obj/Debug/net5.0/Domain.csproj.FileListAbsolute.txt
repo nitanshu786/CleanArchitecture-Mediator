@@ -14,7 +14,6 @@ D:\AllCOmpanyWork\CleanArchitectureDemo\Domain\bin\Debug\net5.0\Domain.deps.json
 D:\AllCOmpanyWork\CleanArchitectureDemo\Domain\bin\Debug\net5.0\Domain.dll
 D:\AllCOmpanyWork\CleanArchitectureDemo\Domain\bin\Debug\net5.0\ref\Domain.dll
 D:\AllCOmpanyWork\CleanArchitectureDemo\Domain\bin\Debug\net5.0\Domain.pdb
-D:\AllCOmpanyWork\CleanArchitectureDemo\Domain\obj\Debug\net5.0\Domain.csprojAssemblyReference.cache
 D:\AllCOmpanyWork\CleanArchitectureDemo\Domain\obj\Debug\net5.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
 D:\AllCOmpanyWork\CleanArchitectureDemo\Domain\obj\Debug\net5.0\Domain.AssemblyInfoInputs.cache
 D:\AllCOmpanyWork\CleanArchitectureDemo\Domain\obj\Debug\net5.0\Domain.AssemblyInfo.cs
@@ -22,3 +21,4 @@ D:\AllCOmpanyWork\CleanArchitectureDemo\Domain\obj\Debug\net5.0\Domain.csproj.Co
 D:\AllCOmpanyWork\CleanArchitectureDemo\Domain\obj\Debug\net5.0\Domain.dll
 D:\AllCOmpanyWork\CleanArchitectureDemo\Domain\obj\Debug\net5.0\ref\Domain.dll
 D:\AllCOmpanyWork\CleanArchitectureDemo\Domain\obj\Debug\net5.0\Domain.pdb
+D:\AllCOmpanyWork\CleanArchitectureDemo\Domain\obj\Debug\net5.0\Domain.csprojAssemblyReference.cache

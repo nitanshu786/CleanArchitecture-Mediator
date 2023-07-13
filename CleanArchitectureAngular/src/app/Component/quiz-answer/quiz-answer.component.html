@@ -1,0 +1,38 @@
+<div class="quiz">
+    <h1>Quiz</h1>
+  
+    <mat-card class="question m-4 " *ngFor="let question of answers; let i = index">
+      
+      <h2>Question:{{i+1 }}</h2>
+      <p class="font-bold m-4 "style="font-size: 16px;">{{ i + 1}}.{{question.question}}</p>
+      <mat-radio-group  >
+        <div class="row m-3 ">
+          <div class="col-6">            
+            <span style="font-size: 18px;" >{{question.option1}}</span>
+          </div>
+          <div class="col-6">
+            <span style="font-size: 18px;" >{{question.option2}}</span>
+          </div>
+        </div>
+        <div class="row m-3 ">
+          <div class="col-6">
+            <span style="font-size: 18px;">{{question.option3}}</span>
+          </div>
+          <div class="col-6">
+            <span style="font-size: 18px;" >{{question.option4}}</span>
+          </div>
+        </div>
+        <div class="row m-4 ">
+        <div class="col-6 d-flex justify-content-center mt-4">
+            <span style="font-size: 19px;" > Answers is: &nbsp;<a class=" text-success" style="font-size: 18px;text-decoration: underline; "> {{question.correctAnswer}}</a> </span>
+          </div>
+        </div>
+      </mat-radio-group>
+    </mat-card>
+    <div class="row p-2">
+        <div class="col-3 d-flex justify-content-center mt-4">
+          <button mat-raised-button color="primary" routerLink="/quiz" >Back to Quiz</button>
+        </div>
+      
+      </div>
+</div>

@@ -17,10 +17,20 @@ namespace Infrastruture.Context
 
         }
         public DbSet<Student> Students { get; set; }
+        public DbSet<Register> Registers { get; set; }
+        public DbSet<ExternalUser> ExternalUsers { get; set; }
+        public DbSet<LoginUsers> LoginUsers { get; set; }
+        public DbSet<Quizquestions> Quizquestions { get; set; }
+        public DbSet<UserSelectedAnswer> UserSelectedAnswers { get; set; }
+        public DbSet<UserActivity> UserActivities { get; set; }
 
         public async Task<int> SaveChangesAsync()
         {
             return await base.SaveChangesAsync();
+        }
+        public async Task<int> SaveChanges()
+        {
+            return  base.SaveChanges();
         }
     }
 }

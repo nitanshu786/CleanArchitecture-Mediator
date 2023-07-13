@@ -1,0 +1,39 @@
+<nav class="navbar">
+    
+    <ul class="navbar-menu">
+      <li class="navbar-item">
+        <a class="nav-link" routerLink="/home">Home</a>
+      </li>
+      <li class="navbar-item">
+        <a class="nav-link" routerLink="/student">Add Student</a>
+      </li>
+      <li class="navbar-item" *ngIf="isActivate">
+        <a class="nav-link" routerLink="/quizquestion">CreateQuiz</a>
+      </li>
+      <li class="navbar-item dropdown" > 
+        
+        <a class="nav-link"  >Quiz</a>
+        <!-- *ngIf="isQuizVisible" -->
+        <div class="dropdown-content">
+          <a routerLink="/quiz">Start Quiz</a>
+        </div>
+      </li>
+        <li class="navbar-item dropdown">
+          <a class="nav-link">Register</a>
+          <div class="dropdown-content">
+            <a routerLink="/register">Register</a>
+            <a routerLink="/login">SignUp</a>
+          </div>
+        </li>
+        
+    
+    </ul> 
+       
+      <li class="navbar-item">
+        <button *ngIf="RegisterService.users!=''" class="logout-button"(click)="logout()" >Logout</button>
+        <button *ngIf="RegisterService.users===''" class="logout-button"(click)="logout()" >Login</button>
+    </li>
+</nav>
+<div>
+    <router-outlet></router-outlet>
+</div>

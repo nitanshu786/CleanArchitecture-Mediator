@@ -15,7 +15,7 @@ namespace Infrastruture.Dependency
         public static void AddPersistence(this IServiceCollection services)
         {
           
-            services.AddScoped<IApplicatinDbContext>(provider => provider.GetService<ApplicationDbContext>());
+            services.AddTransient<IApplicatinDbContext>(provider => provider.GetService<ApplicationDbContext>());
         }
     }
 }
